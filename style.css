@@ -139,11 +139,12 @@ du har besøgt knappens link. Dette er en god standard at have*/
 /*--------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.11)), url(/css/img/hero-picture.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.11)), url(/css/img/hero-picture-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    z-index: 2;
 }
 
 nav {
@@ -158,6 +159,7 @@ nav {
     margin-top: 65px;
     /* i forhold til main-nav float, list-style og main-nav li's display: inline-block, så er det sådan her, 
     at alle gør det. Det er en standard måde at lave knapperne på.*/
+    z-index: 1;
 }
 
 .main-nav li {
@@ -202,17 +204,6 @@ nav {
 .event-section {
     margin: 0;
     padding: 70px 0;
-}
-
-.event-showcase {
-    list-style: none;
-    width: 100%;
-}
-
-.event-showcase li {
-    display: block;
-    float: right;
-    width: 33.333%;
 }
 
 .event-photo {
